@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RetrofitKotlinExample</string>
+    <string name="lblUsuario">Ingresa el usuario</string>
+    <string name="txtUsuario">Usuario</string>
+    <string name="lblContraseña">Ingresa tu contraseña</string>
+    <string name="lblInicio">Inicio exitoso</string>
+    <string name="txtContraseña">Contraseña</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="btnSalir">Cerrar sesión</string>
+</resources>
