@@ -1,2 +1,2 @@
-# RetrofitKotlinExample
-Proyecto de demostración para el tutorial https://cursokotlin.com
+# Proyecto autos
+Proyecto desarrollado en Kotlin
