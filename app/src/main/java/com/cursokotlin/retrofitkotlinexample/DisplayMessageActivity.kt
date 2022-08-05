@@ -3,6 +3,8 @@ package com.cursokotlin.retrofitkotlinexample
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.EditText
 import android.widget.TextView
 
 class DisplayMessageActivity : AppCompatActivity() {
@@ -16,5 +18,11 @@ class DisplayMessageActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textView).apply {
             text = message
         }
+    }
+
+    fun funComenzar(view: View) {
+        // Aquí va la acción del botón
+        val comenzar = Intent(this, ActMenu::class.java)
+        startActivity(comenzar)
     }
 }

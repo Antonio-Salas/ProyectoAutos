@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">RetrofitKotlinExample</string>
+    <string name="app_name">Proyecto autos</string>
+
+    <string name="txt01">Observaciones</string>
+
+    <string name="btn01">Guardar y seguir</string>
+    <string name="btn02">Comenzar evaluación</string>
+
     <string name="lblUsuario">Ingresa el usuario</string>
     <string name="txtUsuario">Usuario</string>
     <string name="lblContraseña">Ingresa tu contraseña</string>
@@ -7,4 +13,48 @@
     <string name="txtContraseña">Contraseña</string>
     <string name="btnIngresar">Ingresar</string>
     <string name="btnSalir">Cerrar sesión</string>
+
+    <string name="pgn01">Sistemas motor</string>
+
+    <string name="lblTitulo01png01">Sistema de carga y arranque</string>
+    <string name="lblTitulo02png01">Sistema de admisión de aire</string>
+    <string name="lblTitulo03png01">Sistema de emisión de gases</string>
+    <string name="lblTitulo04png01">Sistema de enfriamiento</string>
+    <string name="lblTitulo05png01">Sistema de encendido o ignición</string>
+    <string name="lblTitulo06png01">Sistema de inyección de combustible</string>
+    <string name="lblTitulo07png01">Sistema evaporativo</string>
+
+    <string name="lblT01Campo01">Batería</string>
+    <string name="lblT01Campo02">Alternador</string>
+    <string name="lblT01Campo03">Protección de circuitos</string>
+    <string name="lblT01Campo04">Cableados y conectores</string>
+    <string name="lblT01Campo05">Conexiones E y E</string>
+    <string name="lblT01Campo06">Motor de arranque</string>
+    <string name="lblT01Campo07">Modulos</string>
+    <string name="lblT01Campo08">Soportes</string>
+    <string name="lblT01Campo09">Sujeciones</string>
+
+    <string name="lblOF">Originalidad / Func.</string>
+    <string name="lblEv">Evaluación</string>
+
+    <string name="spn01">O/F</string>
+    <string name="spn02">Ev.</string>
+
+    <string-array name="arreglo_evaluacion">
+        <item>AU</item>
+        <item>OR</item>
+        <item>RT</item>
+        <item>RC</item>
+        <item>Ev</item>
+    </string-array>
+
+    <string-array name="arreglo_valores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
 </resources>
