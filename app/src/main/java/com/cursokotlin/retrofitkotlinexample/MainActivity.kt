@@ -2,103 +2,74 @@ package com.cursokotlin.retrofitkotlinexample
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.StrictMode
+import android.util.Log
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.cursokotlin.retrofitkotlinexample.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
 
-class MainActivity : AppCompatActivity()/*, androidx.appcompat.widget.SearchView.OnQueryTextListener */ {
+class MainActivity : AppCompatActivity() {
 
-    /*
-    lateinit var imagesPuppies: List<String>
-    lateinit var dogsAdapter: DogsAdapter
-
-    private lateinit var binding: ActivityMainBinding
-    */
-
+    private fun toast(){
+        val text = "Usuario y/o contraseña invalidos"
+        val duration = Toast.LENGTH_SHORT
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
+    }
+    private fun getRetrofit(): Retrofit{
+        return Retrofit.Builder()
+                .baseUrl("http://192.168.100.7:8000/api/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
+        val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+        StrictMode.setThreadPolicy(policy)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val user = findViewById<EditText>(R.id.user).text;
+        val password = findViewById<EditText>(R.id.password).text;
+        val submitForm = findViewById<Button>(R.id.btnIniciarSesion);
+
+        submitForm.setOnClickListener{
+            if(user.toString() == "" || password.toString() == ""){
+                toast();
+            } else{
+                val inicio = Intent(this, DisplayMessageActivity::class.java);
+                CoroutineScope(Dispatchers.IO).launch {
+                    Log.d("user", "Enviando request...")
+                    val call = getRetrofit().create(APIService::class.java).getUser("usuarios/$user/$password").execute()
+                    Log.d("user", "convirtiendo response...")
+                    val response = call.body() as getUserRes
+                    runOnUiThread{
+                        if (response.status == "200"){
+                            startActivity(inicio)
+                        } else {
+                            toast()
+                        }
+                    }
+                }
+            }
+        }
     }
 
+    /*
     fun sendMessage(view: View) {
         /* Aquí va la acción del botón*/
-        val editText = findViewById<EditText>(R.id.editTextTextPassword)
+        val editText = findViewById<EditText>(R.id.password)
         val message = editText.text.toString()
         val intent = Intent(this, DisplayMessageActivity::class.java).apply {
             putExtra(EXTRA_MESSAGE, message)
         }
         startActivity(intent)
     }
-    /*
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        binding.searchBreed.setOnQueryTextListener(this)
-        */
-
-    /*
-
-    private fun initCharacter(puppies: DogsResponse) {
-        if (puppies.status == "success") {
-            imagesPuppies = puppies.images
-        }
-        dogsAdapter = DogsAdapter(imagesPuppies)
-        binding.rvDogs.setHasFixedSize(true)
-        binding.rvDogs.layoutManager = LinearLayoutManager(this)
-        binding.rvDogs.adapter = dogsAdapter
-    }
-
-    private fun getRetrofit(): Retrofit {
-        return Retrofit.Builder()
-            .baseUrl("https://dog.ceo/api/breed/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-    }
-
-    override fun onQueryTextSubmit(query: String): Boolean {
-        searchByName(query.lowercase())
-        return true
-    }
-
-    private fun searchByName(query: String) {
-        CoroutineScope(Dispatchers.IO).launch {
-            val call =
-                getRetrofit().create(APIService::class.java).getCharacterByName("$query/images")
-                    .execute()
-            val puppies = call.body() as DogsResponse?
-            runOnUiThread {
-                if (puppies?.status == "success") {
-                    initCharacter(puppies)
-                } else {
-                    showErrorDialog()
-                }
-                hideKeyboard()
-            }
-        }
-    }
-
-    private fun showErrorDialog() {
-        Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onQueryTextChange(newText: String?): Boolean {
-        return true
-    }
-
-    private fun hideKeyboard() {
-        val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.hideSoftInputFromWindow(binding.viewRoot.windowToken, 0)
-    }
-     */
+    */
 }
