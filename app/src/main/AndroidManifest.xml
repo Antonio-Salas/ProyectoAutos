@@ -11,12 +11,76 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<!-- - ***************************************************************************************** -->
+<!-- - BOTÓN SUPERIOR TBL007 A TBL06 -->
+<!-- - ***************************************************************************************** -->
+        <activity
+            android:name=".tbl07_pgn01"
+            android:exported="false"
+            android:parentActivityName=".tbl06_pgn01">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tbl06_pgn01" />
+        </activity>
+<!-- - ***************************************************************************************** -->
+<!-- - BOTÓN SUPERIOR TBL006 A TBL05 -->
+<!-- - ***************************************************************************************** -->
+        <activity
+            android:name=".tbl06_pgn01"
+            android:exported="false"
+            android:parentActivityName=".tbl05_pgn01">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tbl05_pgn01" />
+        </activity>
+<!-- - ***************************************************************************************** -->
+<!-- - BOTÓN SUPERIOR TBL05 A TBL04 -->
+<!-- - ***************************************************************************************** -->
+        <activity
+            android:name=".tbl05_pgn01"
+            android:exported="false"
+            android:parentActivityName=".tbl04_pgn01">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tbl04_pgn01" />
+        </activity>
+<!-- - ***************************************************************************************** -->
+<!-- - BOTÓN SUPERIOR TBL0 A TBL -->
+<!-- - ***************************************************************************************** -->
+        <activity
+            android:name=".tbl04_pgn01"
+            android:exported="false" />
+        <activity
+            android:name=".tbl03_pgn01"
+            android:exported="false" />
+        <activity
+            android:name=".tbl02_pgn01"
+            android:exported="false" />
         <activity
             android:name=".tbl01_pgn01"
             android:exported="false" />
+<!-- - ***************************************************************************************** -->
+<!-- - BOTÓN SUPERIOR MENU A BUSCAR FOLIO -->
+<!-- - ***************************************************************************************** -->
         <activity
             android:name=".ActMenu"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".DisplayMessageActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DisplayMessageActivity" />
+        </activity>
+<!-- - ***************************************************************************************** -->
+<!-- - BOTÓN SUPERIOR BUSCAR FOLIO A LOGIN -->
+<!-- - ***************************************************************************************** -->
         <activity
             android:name=".DisplayMessageActivity"
             android:parentActivityName=".MainActivity">

@@ -6,12 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ActMenu">
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/act_menu_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Toolbar"
+        app:popupTheme="@style/Toolbar"
+        app:collapseIcon="?attr/homeAsUpIndicator"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:orientation="vertical" >
+        app:layout_constraintTop_toBottomOf="@+id/act_menu_toolbar">
 
         <TextView
             android:id="@+id/txtTitulo01"
@@ -27,25 +40,28 @@
             android:id="@+id/btn01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="tbl01"
+            android:onClick="menu_ir_tbl01"
             android:text="@string/lblTitulo01png01" />
 
         <Button
             android:id="@+id/btn02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="menu_ir_tbl02"
             android:text="@string/lblTitulo02png01" />
 
         <Button
             android:id="@+id/btn03"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="menu_ir_tbl03"
             android:text="@string/lblTitulo03png01" />
 
         <Button
             android:id="@+id/btn04"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="menu_ir_tbl04"
             android:text="@string/lblTitulo04png01" />
 
         <Button

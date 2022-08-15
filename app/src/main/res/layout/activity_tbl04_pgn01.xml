@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tbl01_pgn01">
+    tools:context=".tbl04_pgn01">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,25 +20,25 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/txtTitulo01"
+                android:id="@+id/txtTitulo04"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="@string/lblTitulo01png01"
+                android:text="@string/lblTitulo04png01"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 1ER CAMPO - BATERIA -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 1ER CAMPO - Radiador -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblBateria"
+                android:id="@+id/lblT04C01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo01"
+                android:text="@string/lblT04Campo01"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -90,16 +90,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 2DO CAMPO - ALTERNADOR -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 2DO CAMPO - TAPON DE RADIADOR -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblAlternador"
+                android:id="@+id/lblT04C02"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo02"
+                android:text="@string/lblT04Campo02"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -151,16 +151,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 3ER CAMPO - PROTECCIÓN DE CIRCUITOS-->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 3ER CAMPO - DEFORMIDADES O GOLPES -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblProteccionDeCircuitos"
+                android:id="@+id/lblT04C03"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo03"
+                android:text="@string/lblT04Campo03"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -212,16 +212,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 4TO CAMPO - CABLEADOS Y CONECTORES -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 4TO CAMPO - MANGUERAS Y DUCTOS -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblCableadosYConectores"
+                android:id="@+id/lblT04C04"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo04"
+                android:text="@string/lblT04Campo04"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -273,16 +273,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 5TO CAMPO - CONEXIONES E & E -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 5TO CAMPO - CABLEADOS Y CONECTORES -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblConexionesEyE"
+                android:id="@+id/lblT04C05"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo05"
+                android:text="@string/lblT04Campo05"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -334,16 +334,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 6TO CAMPO - MOTOR DE ARRANQUE -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 6TO CAMPO - CONEXIONES E & E -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblMotorDeArranque"
+                android:id="@+id/lblT04C06"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo06"
+                android:text="@string/lblT04Campo06"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -395,16 +395,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 7MO CAMPO - MODULOS -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 7MO CAMPO - FUGAS -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblModulos"
+                android:id="@+id/lblT04C07"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo07"
+                android:text="@string/lblT04Campo07"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -456,16 +456,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 8VO CAMPO - Soportes -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 8VO CAMPO - SOPORTES -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblSoportes"
+                android:id="@+id/lblT04C08"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo08"
+                android:text="@string/lblT04Campo08"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -517,16 +517,16 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ***************************************************************************************-->
-            <!--- 9NO CAMPO - SUJECIONES -->
-            <!--- ***************************************************************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 9NO CAMPO - SUJECIONES -->
+    <!--- ***************************************************************************************-->
             <TextView
-                android:id="@+id/lblSujeciones"
+                android:id="@+id/lblT04C09"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/lblT01Campo09"
+                android:text="@string/lblT04Campo09"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -578,7 +578,205 @@
                 android:hint="@string/txt01"
                 android:minHeight="48dp" />
 
-            <!--- ********************************* Final ***********************************************-->
+    <!--- ***************************************************************************************-->
+    <!--- 10MO CAMPO - CON CONTROL ELÉCTRICO -->
+    <!--- ***************************************************************************************-->
+            <TextView
+                android:id="@+id/lblT04C10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="#E5E5E5"
+                android:text="@string/lblT04Campo10"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/lblCCE01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblCCE01"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/lblCCE02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblCCE02"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/lblCCE03"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblCCE03"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/lblCCE04"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblCCE04"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/lblCCE05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/lblCCE05"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt01"
+                android:minHeight="48dp" />
+
+    <!--- ***************************************************************************************-->
+    <!--- 11VO CAMPO - SENSORES DE TEMPERATURA -->
+    <!--- ***************************************************************************************-->
+            <TextView
+                android:id="@+id/lblT04C011"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/lblT04Campo11"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblOFC11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lblOF" />
+
+                <TextView
+                    android:id="@+id/lblEvC11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lblEv" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner01C11"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/spn01"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinner02C11"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/spn02"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt01"
+                android:minHeight="48dp" />
+
+    <!--- ***************************************************************************************-->
+    <!--- 12VO CAMPO - MODULOS -->
+    <!--- ***************************************************************************************-->
+            <TextView
+                android:id="@+id/lblT04C012"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/lblT04Campo12"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblOFC12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lblOF" />
+
+                <TextView
+                    android:id="@+id/lblEvC12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lblEv" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner01C12"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/spn01"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinner02C12"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/spn02"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt01"
+                android:minHeight="48dp" />
+
+    <!--- ********************************* Final ***********************************************-->
             <View android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -589,9 +787,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:onClick="ir_tbl02pgn01"
+                android:onClick="ir_tbl05pgn01"
                 android:text="@string/btn01" />
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

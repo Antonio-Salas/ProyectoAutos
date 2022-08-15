@@ -7,20 +7,20 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 
-class tbl01_pgn01 : AppCompatActivity() {
+class tbl02_pgn01 : AppCompatActivity() {
 
-    fun ir_tbl02pgn01(view: View){
+    fun ir_tbl03pgn01(view: View){
         // Aquí van las acciones del botón
-        val tabla01 = Intent(this, tbl02_pgn01::class.java)
+        val tabla01 = Intent(this, tbl03_pgn01::class.java)
         startActivity(tabla01)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tbl01_pgn01)
+        setContentView(R.layout.activity_tbl02_pgn01)
 
 // *************************************************************************************************
-// 1ER CAMPO - Batería
+// 1ER CAMPO - MULTIPLE DE ADMISIÓN
 // *************************************************************************************************
         val spinner01C01: Spinner = findViewById(R.id.spinner01C01)
         val arrayAdapter01C01 = ArrayAdapter.createFromResource(
@@ -46,7 +46,7 @@ class tbl01_pgn01 : AppCompatActivity() {
             spinner02C01.adapter = adapter
         }
 // *************************************************************************************************
-// 2DO CAMPO - Alternador
+// 2DO CAMPO - FILTRO DE AIRE
 // *************************************************************************************************
         val spinner01C02: Spinner = findViewById(R.id.spinner01C02)
         val arrayAdapter01C02 = ArrayAdapter.createFromResource(
@@ -73,7 +73,7 @@ class tbl01_pgn01 : AppCompatActivity() {
         }
 
 // *************************************************************************************************
-// 3ER CAMPO - Protección de circuitos
+// 3ER CAMPO - HABITACULO FILTRO
 // *************************************************************************************************
 
         val spinner01C03: Spinner = findViewById(R.id.spinner01C03)
@@ -101,7 +101,7 @@ class tbl01_pgn01 : AppCompatActivity() {
         }
 
 // *************************************************************************************************
-// 4TO CAMPO - Cableados y conectores
+// 4TO CAMPO - TAPA FILTROS DE AIRE
 // *************************************************************************************************
 
         val spinner01C04: Spinner = findViewById(R.id.spinner01C04)
@@ -129,7 +129,7 @@ class tbl01_pgn01 : AppCompatActivity() {
         }
 
 // *************************************************************************************************
-// 5TO CAMPO - Conexiones E & E
+// 5TO CAMPO - MANGUERAS Y DUCTOS
 // *************************************************************************************************
 
         val spinner01C05: Spinner = findViewById(R.id.spinner01C05)
@@ -157,7 +157,7 @@ class tbl01_pgn01 : AppCompatActivity() {
         }
 
 // *************************************************************************************************
-// 6TO CAMPO - MOTOR DE ARRANQUE
+// 6TO CAMPO - FUGAS
 // *************************************************************************************************
 
         val spinner01C06: Spinner = findViewById(R.id.spinner01C06)
@@ -185,7 +185,7 @@ class tbl01_pgn01 : AppCompatActivity() {
         }
 
 // *************************************************************************************************
-// 7MO CAMPO - MODULOS
+// 7MO CAMPO - SOPORTES
 // *************************************************************************************************
 
         val spinner01C07: Spinner = findViewById(R.id.spinner01C07)
@@ -213,7 +213,7 @@ class tbl01_pgn01 : AppCompatActivity() {
         }
 
 // *************************************************************************************************
-// 8VO CAMPO - SOPORTES
+// 8VO CAMPO - SUJECIONES
 // *************************************************************************************************
 
         val spinner01C08: Spinner = findViewById(R.id.spinner01C08)
@@ -241,7 +241,11 @@ class tbl01_pgn01 : AppCompatActivity() {
         }
 
 // *************************************************************************************************
-// 9NO CAMPO - SUJECIONES
+// 9NO CAMPO - CON CONTROL ELÉCTRICO
+// *************************************************************************************************
+
+// *************************************************************************************************
+// 10MO CAMPO - SENSORES TPS, MAF, MAP, IAT
 // *************************************************************************************************
 
         val spinner01C09: Spinner = findViewById(R.id.spinner01C09)
@@ -266,6 +270,62 @@ class tbl01_pgn01 : AppCompatActivity() {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
             spinner02C09.adapter = adapter
+        }
+
+// *************************************************************************************************
+// 11VO CAMPO - CABLEADOS Y CONECTORES
+// *************************************************************************************************
+
+        val spinner01C10: Spinner = findViewById(R.id.spinner01C10)
+        val arrayAdapter01C10 = ArrayAdapter.createFromResource(
+            this,
+            R.array.arreglo_evaluacion,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner01C10.adapter = adapter
+        }
+
+        val spinner02C10: Spinner = findViewById(R.id.spinner02C10)
+        val arrayAdapter02C10 = ArrayAdapter.createFromResource(
+            this,
+            R.array.arreglo_valores,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner02C10.adapter = adapter
+        }
+
+// *************************************************************************************************
+// 12VO CAMPO - CONEXIONES E Y E
+// *************************************************************************************************
+
+        val spinner01C11: Spinner = findViewById(R.id.spinner01C11)
+        val arrayAdapter01C11 = ArrayAdapter.createFromResource(
+            this,
+            R.array.arreglo_evaluacion,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner01C11.adapter = adapter
+        }
+
+        val spinner02C11: Spinner = findViewById(R.id.spinner02C11)
+        val arrayAdapter02C11 = ArrayAdapter.createFromResource(
+            this,
+            R.array.arreglo_valores,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner02C11.adapter = adapter
         }
 
     }

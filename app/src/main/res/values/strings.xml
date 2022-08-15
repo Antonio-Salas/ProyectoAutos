@@ -34,11 +34,96 @@
     <string name="lblT01Campo08">Soportes</string>
     <string name="lblT01Campo09">Sujeciones</string>
 
+    <string name="lblT02Campo01">Multiple de admisión</string>
+    <string name="lblT02Campo02">Filtro de aire</string>
+    <string name="lblT02Campo03">Habitaculo filtro</string>
+    <string name="lblT02Campo04">Tapa de filtros de aire</string>
+    <string name="lblT02Campo05">Mangueras y ductos</string>
+    <string name="lblT02Campo06">Fugas</string>
+    <string name="lblT02Campo07">Soportes</string>
+    <string name="lblT02Campo08">Sujeciones</string>
+    <string name="lblT02Campo09">Con control electrónico</string>
+    <string name="lblT02Campo10">Sensores TPS, MAF, MAP, IAT</string>
+    <string name="lblT02Campo11">Cableados y conectores</string>
+    <string name="lblT02Campo12">Conexiones E y E</string>
+
+    <string name="lblT03Campo01">Multiple de escape</string>
+    <string name="lblT03Campo02">Silenciadores</string>
+    <string name="lblT03Campo03">Resonadores</string>
+    <string name="lblT03Campo04">Juntas flexibles</string>
+    <string name="lblT03Campo05">Juntas de escape</string>
+    <string name="lblT03Campo06">Caño de tubo o escape</string>
+    <string name="lblT03Campo07">Fugas</string>
+    <string name="lblT03Campo08">Soportes</string>
+    <string name="lblT03Campo09">Sujeciones</string>
+    <string name="lblT03Campo10">Con control electrónico</string>
+    <string name="lblT03Campo11">Convertidor catalítico</string>
+    <string name="lblT03Campo12">Sensor O2</string>
+    <string name="lblT03Campo13">Cableados y conectores</string>
+    <string name="lblT03Campo14">Conexiones E y E</string>
+
+    <string name="lblT04Campo01">Radiador</string>
+    <string name="lblT04Campo02">Tapon de radiador</string>
+    <string name="lblT04Campo03">Deformidades o golpes</string>
+    <string name="lblT04Campo04">Mangueras y ductos</string>
+    <string name="lblT04Campo05">Cableados y conectores</string>
+    <string name="lblT04Campo06">Conexiones E y E</string>
+    <string name="lblT04Campo07">Fugas</string>
+    <string name="lblT04Campo08">Soportes</string>
+    <string name="lblT04Campo09">Sujeciones</string>
+    <string name="lblT04Campo10">Con control electrónico</string>
+    <string name="lblT04Campo11">Sensores de temperatura</string>
+    <string name="lblT04Campo12">Modulos</string>
+
+    <string name="lblT05Campo01">Interruptor de encendido (Switch)</string>
+    <string name="lblT05Campo02">Distribuidor</string>
+    <string name="lblT05Campo03">Cables bujillas (Circuito secundario)</string>
+    <string name="lblT05Campo04">Cables alimentación (Circuito primario)</string>
+    <string name="lblT05Campo05">Cableados y conectores</string>
+    <string name="lblT05Campo06">Conexiones E y E</string>
+    <string name="lblT05Campo07">Bobinas</string>
+    <string name="lblT05Campo08">Modulos</string>
+    <string name="lblT05Campo09">Soportes</string>
+    <string name="lblT05Campo10">Sujeciones</string>
+    <string name="lblT05Campo11">Con control electrónico</string>
+    <string name="lblT05Campo12">Modulo DIS</string>
+    <string name="lblT05Campo13">Bobinas independientes</string>
+
+    <string name="lblT06Campo01">Carburador</string>
+    <string name="lblT06Campo02">Filtro de combustible</string>
+    <string name="lblT06Campo03">Tanque de combustible</string>
+    <string name="lblT06Campo04">Bomba de combustible</string>
+    <string name="lblT06Campo05">Mangueras y ductos</string>
+    <string name="lblT06Campo06">Cableados y conectores</string>
+    <string name="lblT06Campo07">Conexiones E y E</string>
+    <string name="lblT06Campo08">Fugas</string>
+    <string name="lblT06Campo09">Soportes</string>
+    <string name="lblT06Campo10">Sujeciones</string>
+    <string name="lblT06Campo11">Con control electrónico</string>
+    <string name="lblT06Campo12">Cuerpo de aceleración</string>
+    <string name="lblT06Campo13">Inyectores</string>
+
+    <string name="lblT07Campo01">Valvula de purga</string>
+    <string name="lblT07Campo02">Canister</string>
+    <string name="lblT07Campo03">Mangueras y ductos</string>
+    <string name="lblT07Campo04">Cableados y conectores</string>
+    <string name="lblT07Campo05">Conexiones E y E</string>
+    <string name="lblT07Campo06">Fugas</string>
+    <string name="lblT07Campo07">Soportes</string>
+    <string name="lblT07Campo08">Sujeciones</string>
+    <string name="lblT07Campo09">Con control electrónico</string>
+
     <string name="lblOF">Originalidad / Func.</string>
     <string name="lblEv">Evaluación</string>
 
     <string name="spn01">O/F</string>
     <string name="spn02">Ev.</string>
+
+    <string name="lblCCE01">AU</string>
+    <string name="lblCCE02">OR</string>
+    <string name="lblCCE03">RT</string>
+    <string name="lblCCE04">RC</string>
+    <string name="lblCCE05">Ev.</string>
 
     <string-array name="arreglo_evaluacion">
         <item>AU</item>
