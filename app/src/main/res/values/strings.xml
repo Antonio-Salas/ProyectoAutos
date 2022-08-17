@@ -14,6 +14,11 @@
     <string name="btnIngresar">Ingresar</string>
     <string name="btnSalir">Cerrar sesión</string>
 
+
+    <string name="lblNumeroSerie">Ingresa el número de serie del auto</string>
+    <string name="btnCerrarSesion">Cerrar sesión</string>
+    <string name="txtNumeroSerie">Ejemplo: 1F17AB</string>
+
     <string name="pgn01">Sistemas motor</string>
 
     <string name="lblTitulo01png01">Sistema de carga y arranque</string>

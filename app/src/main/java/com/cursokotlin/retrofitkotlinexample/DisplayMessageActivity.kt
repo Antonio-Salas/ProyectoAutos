@@ -15,9 +15,11 @@ class DisplayMessageActivity : AppCompatActivity() {
         val message = intent.getStringExtra(EXTRA_MESSAGE)
 
         // Capture the layout's TextView and set the string as its text
+        /*
         val textView = findViewById<TextView>(R.id.textView).apply {
             text = message
         }
+        */
     }
 
     fun funComenzar(view: View) {
@@ -25,4 +27,11 @@ class DisplayMessageActivity : AppCompatActivity() {
         val comenzar = Intent(this, ActMenu::class.java)
         startActivity(comenzar)
     }
+
+    fun cerrar_sesion(view: View) {
+        // Aquí va la acción del botón
+        val comenzar = Intent(this, MainActivity::class.java)
+        startActivity(comenzar)
+    }
+
 }
