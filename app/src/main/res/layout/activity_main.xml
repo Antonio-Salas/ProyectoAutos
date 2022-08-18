@@ -34,7 +34,7 @@
             android:text="@string/lblUsuario" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
@@ -50,7 +50,7 @@
             android:text="@string/lblContraseña" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -62,8 +62,11 @@
             android:id="@+id/btnIniciarSesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:onClick="sendMessage"
             android:theme="@style/Boton"
+=======
+>>>>>>> 3ee38dabd2e7870c75a5dc5b7bb19c7fd27ab802
             android:text="@string/btnIngresar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

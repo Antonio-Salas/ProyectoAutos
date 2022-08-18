@@ -11,5 +11,8 @@ import retrofit2.http.*
  */
 interface APIService {
     @GET
-    fun getCharacterByName(@Url url: String): Call<DogsResponse>
+    fun getUser(@Url url: String): Call<getUserRes>
+
+    @GET
+    fun buscarSerie(@Url url: String): Call<buscarSerie>
 }
