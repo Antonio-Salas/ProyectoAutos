@@ -586,10 +586,11 @@
 
             <Button
                 android:id="@+id/btn01"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:onClick="ir_tbl02pgn01"
+                android:theme="@style/Boton"
                 android:text="@string/btn01" />
         </LinearLayout>
     </ScrollView>

@@ -41,46 +41,53 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="menu_ir_tbl01"
-            android:text="@string/lblTitulo01png01" />
+            android:text="@string/lblTitulo01png01"
+            android:theme="@style/Boton"/>
 
         <Button
             android:id="@+id/btn02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="menu_ir_tbl02"
-            android:text="@string/lblTitulo02png01" />
+            android:text="@string/lblTitulo02png01"
+            android:theme="@style/Boton"/>
 
         <Button
             android:id="@+id/btn03"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="menu_ir_tbl03"
-            android:text="@string/lblTitulo03png01" />
+            android:text="@string/lblTitulo03png01"
+            android:theme="@style/Boton"/>
 
         <Button
             android:id="@+id/btn04"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="menu_ir_tbl04"
-            android:text="@string/lblTitulo04png01" />
+            android:text="@string/lblTitulo04png01"
+            android:theme="@style/Boton"/>
 
         <Button
             android:id="@+id/btn05"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lblTitulo05png01" />
+            android:text="@string/lblTitulo05png01"
+            android:theme="@style/Boton"/>
 
         <Button
             android:id="@+id/btn06"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lblTitulo06png01" />
+            android:text="@string/lblTitulo06png01"
+            android:theme="@style/Boton"/>
 
         <Button
             android:id="@+id/btn07"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lblTitulo07png01" />
+            android:text="@string/lblTitulo07png01"
+            android:theme="@style/Boton"/>
 
 
     </LinearLayout>
